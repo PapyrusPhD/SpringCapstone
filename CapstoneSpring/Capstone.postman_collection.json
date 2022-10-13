@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "28e746ce-13c1-4b4e-be61-11486837a595",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJJcmFGb3JuaWxsb3MiLCJleHAiOjE2NjU2ODEwNTgsImlhdCI6MTY2NTY2MzA1OCwidXNlcm5hbWUiOjF9.yq1PECvlkSzmz0JEdPxOREjlrsBy2sUcFvw4FKHVuSCJaKJEGFJgy1_qlGfe23EI2_PaHdMwr98XW-eS6LawKQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"IraFornillos\",\r\n    \"password\": \"123ballshaha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enrollee/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enrollee",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Enrollee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJJcmFGb3JuaWxsb3MiLCJleHAiOjE2NjU2ODEwNTgsImlhdCI6MTY2NTY2MzA1OCwidXNlcm5hbWUiOjF9.yq1PECvlkSzmz0JEdPxOREjlrsBy2sUcFvw4FKHVuSCJaKJEGFJgy1_qlGfe23EI2_PaHdMwr98XW-eS6LawKQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"IraFornillos\",\r\n    \"password\": \"pass1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/account/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Enrollments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuaWtlIiwiZXhwIjoxNjY1NjkwMTEwLCJpYXQiOjE2NjU2NzIxMTAsInVzZXJuYW1lIjo2fQ.OM4QOwwsK_5iKxbS7w5mKsDxosrQduFlHBAo4TI_uPrVNb_M0W5Z9OWj1P6EXHZXZSVuJgOl4NcHR0DuW2QcLA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Java Masterclass\",\r\n    \"description\": \"Learn Masterclass\",\r\n    \"price\": \"500.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enrollment/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enrollment",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"IraFornillos\",\r\n    \"password\": \"pass1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enrollee/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enrollee",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Enrollments",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuaWtlIiwiZXhwIjoxNjY1NjkwMTEwLCJpYXQiOjE2NjU2NzIxMTAsInVzZXJuYW1lIjo2fQ.OM4QOwwsK_5iKxbS7w5mKsDxosrQduFlHBAo4TI_uPrVNb_M0W5Z9OWj1P6EXHZXZSVuJgOl4NcHR0DuW2QcLA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Pyton Masterclass\",\r\n    \"description\": \"Learn Masterclass\",\r\n    \"price\": \"50000.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enrollment/update/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enrollment",
+						"update",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Enrollments",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJJcmEiLCJleHAiOjE2NjU2ODcyMjIsImlhdCI6MTY2NTY2OTIyMiwidXNlcm5hbWUiOjN9.PQjggb5B03gBTsJLH0Vur98PLlHqeE9c7FPIk4NtnbLeVn96_tawYvgWfxaJGHRcOtaPPWyn5OSNXfinv-z8qA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/enrollment/delete/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enrollment",
+						"delete",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEnrollment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJJcmFGb3JuaWxsb3MiLCJleHAiOjE2NjU2OTAyODksImlhdCI6MTY2NTY3MjI4OSwidXNlcm5hbWUiOjF9.WUAn4EXWjSTeRJKF58psNtH_fwT_r1J5dw0WnWVNz1dsuPIteVlyoJIpqsRGUNk51vd6sNgGb4lZqrYx-MeZzg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/enrollment/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enrollment",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllEnrollments",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuaWtlIiwiZXhwIjoxNjY1NjkwMTEwLCJpYXQiOjE2NjU2NzIxMTAsInVzZXJuYW1lIjo2fQ.OM4QOwwsK_5iKxbS7w5mKsDxosrQduFlHBAo4TI_uPrVNb_M0W5Z9OWj1P6EXHZXZSVuJgOl4NcHR0DuW2QcLA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/enrollment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enrollment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
